@@ -74,7 +74,14 @@ namespace YoutubeVideocatcher
                     new Thread(Clawer.DownOneVideo).Start(URL);
                     //int stat = Clawer.DownOneVideo(URL);
                 }
-                
+                if (clartext.Text != "")
+                {
+                    clartext.Text.Replace("p", "");
+                    Clawer.Clarity = int.Parse(clartext.Text);
+                    new Thread(Clawer.DownOneVideo).Start(URL);
+                    //int stat = Clawer.DownOneVideo(URL);
+                }
+
             }
             catch
             {

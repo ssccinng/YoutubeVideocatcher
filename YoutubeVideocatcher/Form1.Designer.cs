@@ -46,6 +46,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.is480 = new System.Windows.Forms.CheckBox();
+            this.clartext = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // VideoId
@@ -203,11 +205,28 @@
             this.is480.Text = "with audio";
             this.is480.UseVisualStyleBackColor = true;
             // 
+            // clartext
+            // 
+            this.clartext.Location = new System.Drawing.Point(152, 209);
+            this.clartext.Name = "clartext";
+            this.clartext.Size = new System.Drawing.Size(48, 21);
+            this.clartext.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(36, 212);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 12);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "其他自定义清晰度";
+            // 
             // YoutubeCatcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 230);
+            this.ClientSize = new System.Drawing.Size(581, 246);
+            this.Controls.Add(this.clartext);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.is480);
             this.Controls.Add(this.is1080);
@@ -219,6 +238,7 @@
             this.Controls.Add(this.Catch2);
             this.Controls.Add(this.Catch1);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -253,6 +273,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox is480;
+        private System.Windows.Forms.TextBox clartext;
+        private System.Windows.Forms.Label label10;
     }
 }
 

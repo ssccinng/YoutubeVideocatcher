@@ -124,7 +124,7 @@ namespace PokemonNewsUpdataer_V1
             }
             else
             {
-                pattern = "url.{0,10}\"(?<Video>http.[^\"]*?)\".{0,10}mimeType.{0,20}mp4.{0,500}qualityLabe.{0,10}480p";
+                pattern = "url.{0,10}\"(?<Video>http.[^\"]*?)\".{0,10}mimeType.{0,20}mp4.{0,500}qualityLabe.{0,10}" + Clarity.ToString()+"p";
             }
             Regex reg = new Regex(pattern, RegexOptions.IgnoreCase);
             MatchCollection mc = reg.Matches(Html);
